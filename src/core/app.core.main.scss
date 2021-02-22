@@ -1,0 +1,139 @@
+/*#region Font*/
+//RELATIVE PATHS START FROM: 'src'
+@font-face {
+	font-family: "MarkPro";
+	src: url(./assets/fonts/MarkPro-Light.woff) format('woff');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: "MarkPro";
+	src: url(./assets/fonts/MarkPro-Book.woff) format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "MarkPro";
+	src: url(./assets/fonts/MarkPro-Bold.woff) format('woff');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: "MarkPro";
+	src: url(./assets/fonts/MarkPro-Black.woff) format('woff');
+	font-style: normal;
+	font-weight: 800;
+}
+
+@mixin corefont() {
+	font-family: "MarkPro", sans-serif !important;
+}
+/*#endregion*/
+
+/*#region Main App*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+
+	&:not(input):not(textarea) {
+		outline: none !important;
+	}
+}
+
+html,
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+
+	color: $black;
+	@include corefont();
+	font-size: 100%;
+
+	background: $offwhite;
+}
+
+#View {
+	//Footer is 'absolute' so add padding to the bottom of the view to clear it
+	padding-bottom: 120px;
+}
+/*#endregion*/
+
+/*#region Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+
+	line-height: 1.2em;
+}
+
+//Even though we replaced the Vuetify body font sass variable,
+//we still need to manually overwrite font styles a few places
+.v-application {
+	@include corefont();
+
+	.text-h1,
+	.text-h2,
+	.text-h3,
+	.text-h4,
+	.text-h5,
+	.text-h6,
+	.text-subtitle-1,
+	.text-subtitle-2,
+	.text-body-1,
+	.text-body-2,
+	.text-button,
+	.text-caption,
+	.text-overline {
+		@include corefont();
+	}
+}
+/*#endregion*/
+
+/*#region Utils*/
+img,
+svg {
+	width: 100%;
+	height: auto;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+
+	content: '';
+}
+
+.fillParent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.canHide {
+	opacity: 1;
+
+	transition: opacity .25s linear;
+
+	&.hidden {
+		opacity: 0;
+
+		pointer-events: none;
+	}
+}
+/*#endregion*/
