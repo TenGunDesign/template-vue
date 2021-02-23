@@ -16,11 +16,6 @@ const router = new VueRouter({
 			path: '/gettingstarted',
 			name: 'GettingStarted',
 			component: () => import(/* webpackChunkName: "view-GettingStarted" */ '../views/GettingStarted.vue')
-		},
-		{
-			path: '/styleguide',
-			name: 'StyleGuide',
-			component: () => import(/* webpackChunkName: "view-StyleGuide" */ '../views/StyleGuide.vue')
 		}
 	]
 });

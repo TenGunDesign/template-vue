@@ -70,8 +70,6 @@ h4,
 h5,
 p {
 	margin: 0;
-
-	line-height: 1.2em;
 }
 
 //Even though we replaced the Vuetify body font sass variable,
@@ -84,7 +82,10 @@ p {
 	.text-h3,
 	.text-h4,
 	.text-h5,
-	.text-h6,
+	.text-h6 {
+		@include corefont();
+		line-height: 1.2em;
+	}
 	.text-subtitle-1,
 	.text-subtitle-2,
 	.text-body-1,
@@ -93,6 +94,7 @@ p {
 	.text-caption,
 	.text-overline {
 		@include corefont();
+		line-height: 1.4em;
 	}
 }
 /*#endregion*/

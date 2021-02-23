@@ -18,7 +18,7 @@
 							<br><br>
 							{{ $core.Content.HOME_FEATURES_HEADER}}
 							<ul>
-								<li v-for="(f, idx) in $core.Content.HOME_FEATURES" :key="'feature' + idx">{{ f }}</li>
+								<li v-for="(f, idx) in $core.Content.HOME_FEATURES" :key="'feature' + idx" class="mb-4">{{ f }}</li>
 							</ul>
 						</p>
 					</v-col>

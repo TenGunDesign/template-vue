@@ -5,7 +5,6 @@
 			<v-spacer></v-spacer>
 			<router-link :to="{ name: 'Home' }" class="text-button d-none d-md-block mx-4">{{ $core.Content.HOME_TITLE }}</router-link>
 			<router-link :to="{ name: 'GettingStarted' }" class="text-button d-none d-md-block mx-4">{{ $core.Content.GETTINGSTARTED_TITLE }}</router-link>
-			<router-link :to="{ name: 'StyleGuide' }" class="text-button d-none d-md-block mx-4">{{ $core.Content.STYLEGUIDE_TITLE }}</router-link>
 			<v-app-bar-nav-icon class="d-md-none" @click="navDrawer = true"></v-app-bar-nav-icon>
 		</v-app-bar>
 		<v-navigation-drawer id="topNav-drawer" v-model="navDrawer" app temporary right>
@@ -16,9 +15,6 @@
 					</v-list-item>
 					<v-list-item>
 						<router-link :to="{ name: 'GettingStarted' }" class="text-button">{{ $core.Content.GETTINGSTARTED_TITLE }}</router-link>
-					</v-list-item>
-					<v-list-item>
-						<router-link :to="{ name: 'StyleGuide' }" class="text-button">{{ $core.Content.STYLEGUIDE_TITLE }}</router-link>
 					</v-list-item>
 				</v-list-item-group>
 			</v-list>
