@@ -24,7 +24,7 @@ window.app_localized_content = {
 	GETTINGSTARTED_STEPS: [
 		"Download the latest source for this template from the GitHub repository here: <code>https://github.com/TenGunDesign/template-vue.git</code>",
 		"Copy template source to your working directory for your new project (without the .git directory from this repo)",
-		"Update the <code>name</code> &amp; <code>version</code> values in <code>package.json</code> to reflect your new project values<br>(the local environment file <code>.env</code> also has a build version number in it that you may wish to use)",
+		"Update the <code>name</code> &amp; <code>version</code> values in <code>/package.json</code> &amp; <code>/public/index.html</code> to reflect your new project values<br>(the local environment file <code>.env</code> also has a build version number in it that you may wish to use)",
 		"Run <kbd>npm i</kbd> to initialize the project packages &amp; dependencies",
 		"You're all set! Explore &amp; update your project as needed and use the Vue CLI or run <kbd>npm run serve</kbd> to test your new project"
 	],

@@ -16,7 +16,7 @@ Starter template for Vue.js web projects.
 ## Getting Started
 1. Download the source for this template
 1. Copy template source to your working directory for your new project (without the .git directory from this repo)
-1. Update the "name" & "version" values in "package.json" to reflect your new project values (the local environment file (".env") also has a build version number in it that you may wish to use)
+1. Update the 'name' & 'version' values in `/package.json` & `/public/index.html` to reflect your new project values (the local environment file (`.env`) also has a build version number in it that you may wish to use)
 1. Run `npm i` to initialize project packages & dependencies
 1. You're all set! Explore & update your project as needed and use the Vue CLI or run `npm run serve` to test your new project.
 
