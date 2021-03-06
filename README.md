@@ -2,7 +2,7 @@
 
 Starter template for Vue.js web projects.
 
-![Version](https://img.shields.io/badge/version-v0.1.0.20210223-blue.svg)
+![Version](https://img.shields.io/badge/version-v0.1.0.20210305-blue.svg)
 
 ## Features
 * Vue Router - Including sample routes/views with on-demand loading
